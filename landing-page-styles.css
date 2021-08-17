@@ -1,5 +1,4 @@
 :root{
-    --productBorder: 5px solid black;/*5px solid black*/ 
     --productImageMaxHeight: 200px;
     --productImageMaxWidth: 200px;
     --productImageMinHeight: 200px;
@@ -29,8 +28,8 @@
 
 #title{
     font-family: fantasy, sans-serif;
-    color:white;
-    background-color: black;
+    /* color:white; */
+    /* background-color: black; */
 }
 
 #header-column {
@@ -54,14 +53,18 @@
     padding: 0px;
 }
 
-.nav-link {
-        text-decoration-line: underline;
-}
+
 
 #nav-bar {
     display: flex;
-    justify-content: center;
-    background-color: black;
+    /* justify-content: center; */
+    background-color: rgb(36, 36, 36);
+    padding:10px;
+    /* border-bottom: 1px gray ridge; */
+} 
+#nav-bar div button a{
+    color:white;
+    text-decoration: none;
 }
 
 #info-column {
@@ -74,9 +77,9 @@
     height: 100%;
     max-height: 600px;
 
-    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/blog/play/dota_heroes.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    /* background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/blog/play/dota_heroes.png"); */
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat; */
     
 }
 
@@ -92,7 +95,8 @@
     max-width: var(--productImageMaxWidth);
     min-width: var(--productImageMinWidth);
     min-height: var(--productImageMinHeight);
-    border: var(--productImageBorder);
+    /* border: 4px goldenrod double; */
+    border-radius: 100%;
 }
 
 .item-text{
@@ -109,10 +113,12 @@
     align-items: center;
     
     background-color: rgb(0, 0, 0);
-    border: var(--productBorder);
+    border: 4px gray ridge;
     border-radius: 15px;
     margin: 20px;
     padding: 5px;
+    transition: all 0.25s;
+    /* transition: all box-shadow 0.12s; */
 }
 .products-container{
     display: flex;
